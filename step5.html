@@ -1,0 +1,2552 @@
+<html>
+<!-- body{
+		background: url("material.jpg");
+		background-repeat: no-repeat;
+		background-clip: all;
+	} -->
+<head>
+
+	<title>Visualization</title>
+	<link rel="icon" type="text/ico" href="s.png">
+<style type="text/css">
+body{
+		background: url("sw.jpg");
+	}
+	div#p1
+	{
+		background-color:#929102;
+		width: 70px;
+		height:70px; 
+		float: left;
+		margin-left: 0px;
+		text-align: center;
+		font-size: 24px;
+		font-style: bold;
+		animation-name:a1;
+		animation-delay:10000000000s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;	
+		animation-fill-mode: forwards;
+		animation-play-state:paused;
+	}
+	div#p2
+	{
+		background-color:#929102;
+		width: 70px;
+		height:70px; 
+		float: left;
+		margin-left: 10px;
+		text-align: center;
+		font-size: 24px;
+		font-style: bold;
+		animation-name:b7;
+		animation-delay:10000000000s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;	
+		animation-fill-mode: forwards;
+		animation-play-state:paused;
+
+	}
+	div#p3
+	{
+		background-color:#929102;
+		width: 70px;
+		height:70px; 
+		float: left;
+		margin-left: 10px;
+		text-align: center;
+		font-size: 24px;
+		font-style: bold;
+		animation-name:c6;
+		animation-delay:10000000000s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;	
+		animation-fill-mode: forwards;
+		animation-play-state:paused;
+	}
+	div#p4
+	{
+		background-color:#929102;
+		width: 70px;
+		height:70px; 
+		float: left;
+		margin-left: 10px;
+		text-align: center;
+		font-size: 24px;
+		font-style: bold;
+		animation-name:e7;
+		animation-delay:10000000000s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;	
+		animation-fill-mode: forwards;
+		animation-play-state:paused;
+	}
+	div#p5
+	{
+		background-color:#929102;
+		width: 70px;
+		height:70px; 
+		float: left;
+		margin-left: 10px;
+		text-align: center;
+		font-size: 24px;
+		font-style: bold;
+		animation-name:f7;
+		animation-delay:10000000000s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;	
+		animation-fill-mode: forwards;
+		animation-play-state:paused;
+	}
+	table#in
+	{
+		margin-left: 1100px;
+		position: absolute;
+		top: 90px;
+		box-shadow: 0 8px 6px -6px black;
+	}
+	table#result
+	{
+		margin-left: 1100px;
+		position: absolute;
+		top: 300px;
+		box-shadow: 0 8px 6px -6px black;
+	}
+	tr:nth-child(even) {background: #CCC}
+	tr:nth-child(odd) {background: #FFF}
+	tr:hover,tr.sed:hover
+	{
+		background-color: #238482;
+		color:white;
+	}
+	tr.sed:nth-child(2)
+	{
+		animation-name:tab;
+		animation-dealy:0s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;
+		
+	}
+	tr.sed:nth-child(3)
+	{
+		animation-name:tab;
+		animation-dealy:0s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;
+	}
+	tr.sed:nth-child(4)
+	{
+		animation-name:tab;
+		animation-dealy:0s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;
+	}
+	tr.sed:nth-child(5)
+	{
+		animation-name:tab;
+		animation-dealy:0s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;
+	}
+	tr.sed:nth-child(6)
+	{
+		animation-name:tab;
+		animation-dealy:0s;
+		animation-duration:5s;
+		animation-timing-function:ease-out;
+	}
+	@keyframes tab
+	{
+		0%
+		{
+			background-color: #902890;
+		}
+		10%
+		{
+			background-color: #278293;
+		}
+		20%
+		{
+			background-color: #490843;
+		}
+		30%
+		{
+			background-color: #892637;
+		}
+		40%
+		{
+			background-color: #122343;
+		}
+		50%
+		{
+			background-color: #ffffff;
+		}
+		60%
+		{
+			background-color: #902890;
+		}
+		70%
+		{
+			background-color: #278293;
+		}
+		80%
+		{
+			background-color: #490843;
+		}
+		90%
+		{
+			background-color: #892637;
+		}
+		100%
+		{
+			background-color: #122343;
+		}
+	}
+	button#btnplay,button#btnpause,button#btnstart,button#btnrestart
+	{
+		border: groove;
+		width: 80px;
+		height: 30px;
+		font-family:Verdana, sans-serif;
+		font-size: 15px;
+		margin-left: 1px;
+		box-shadow:0 1px 3px rgba(0,0,0,0.5);
+		border-radius:5px;
+		text-align:top;
+	}
+	button#btnrestart
+	{
+		font-family: Verdana;
+		width: 89px;
+		background-color: #ff4d4d;
+		color:white;
+		border-color: #ff4000; 
+	}
+	button#btnrestart:hover
+	{
+		width: 82px;
+		height: 28px;
+		background-color: white;
+		color:red;
+		border-color:red; 
+	}
+	button#btnstart{
+		background-color: #00ff80;
+		color:white;
+		border-color: #00ff00; 
+		font-weight: bolder;
+	}
+	button#btnstart:hover{
+		background-color:white;
+		color:#00ff00;
+		border-color: #00ff00; 
+	}
+	button#btnpause{
+		background-color: #a9014b;
+		color:white;
+		border-color: #ff0080; 
+	}
+	button#btnpause:hover{
+		background-color: white;
+		color:#a9014b;
+		border-color: #ff0080;
+		width: 75px;
+		height: 28px; 
+	}
+	button#btnplay
+	{
+		
+		background-color: #95DEE3;
+		color:black;
+		border-color: #00ffbf;
+		color: white;
+	}
+	button#btnplay:hover
+	{
+		color: #95DEE3;
+		background-color:white;
+		width: 75px;
+		height: 28px;
+	}
+	hr#hh
+	{
+		width: 1px;
+		position: absolute;
+		right: 400px;
+		height: 450px;
+	}
+	p{
+		text-align:left;
+		font-variant: small-caps;
+		font-size: 20px;
+		font-family: sans-serif;
+		margin-bottom: -20px;
+		margin-top: -10px;
+		margin-left: 350px;
+	}
+	p#paragraphgant{
+		text-align:left;
+		font-size: 20px;
+		font-family: Arial;
+		margin-bottom: -20px;
+		margin-top: -10px;
+		text-decoration: underline;
+  		background: -webkit-radial-gradient(blue,green,blue);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+	}
+	span#cu
+	{
+		text-align:left;
+		font-size: 20px;
+		font-family: Comic Sans MS Black;
+		margin-bottom: -20px;
+		margin-top: -10px;
+		text-decoration: underline;
+	}
+	span#op
+	{
+		position: absolute;
+		margin-left: 1110px;
+		font-size: 20px;
+		font-style:bold comic;
+		text-decoration: underline;
+		font-family: Comic Sans MS Black;
+	}
+	@keyframes a1
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:#4dff4d;
+		}
+		30%{
+			background-color:#3333ff;
+			transform:translate(0px,320px);
+		}
+		60%{
+			background-color:#4dff4d;
+			transform:translate(0px,320px);
+		}
+		80%
+		{
+			background-color: #3333ff;
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(0px,320px);
+		}
+	}
+	@keyframes a2
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(70px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(70px,320px);
+		}
+	}
+	@keyframes a3
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(140px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(140px,320px);
+		}
+	}
+	@keyframes a4
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(210px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(210px,320px);
+		}
+	}
+	@keyframes a5
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(280px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(280px,320px);
+		}
+	}
+	@keyframes a6
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(350px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(350px,320px);
+		}
+	}
+	@keyframes a7
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(420px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(420px,320px);
+		}
+	}
+		@keyframes a8
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(490px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(490px,320px);
+		}
+	}
+	@keyframes a9
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(560px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(560px,320px);
+		}
+	}
+	@keyframes a10
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(630px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(630px,320px);
+		}
+	}
+	@keyframes a11
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(700px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(700px,320px);
+		}
+	}
+	@keyframes b1
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-80px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-80px,320px);
+		}
+	}
+	@keyframes b2
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-10px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-10px,320px);
+		}
+	}
+	@keyframes b3
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(60px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(60px,320px);
+		}
+	}
+	@keyframes b4
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(130px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(130px,320px);
+		}
+	}
+	@keyframes b5
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(200px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(200px,320px);
+		}
+	}
+	@keyframes b6
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(270px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(270px,320px);
+		}
+	}
+	@keyframes b7
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(330px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(330px,320px);
+		}
+	}
+	@keyframes b8
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(400px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(400px,320px);
+		}
+	}
+	@keyframes b9
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(470px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(470px,320px);
+		}
+	}
+	@keyframes b10
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(540px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(540px,320px);
+		}
+	}
+	@keyframes b11
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(610px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(610px,320px);
+		}
+	}
+	@keyframes c1
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-160px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-160px,320px);
+		}
+	}
+	@keyframes c2
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-90px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-90px,320px);
+		}
+	}
+	@keyframes c3
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-20px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-20px,320px);
+		}
+	}
+	@keyframes c4
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(50px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(50px,320px);
+		}
+	}
+	@keyframes c5
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(120px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(120px,320px);
+		}
+	}
+	@keyframes c6
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(190px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(190px,320px);
+		}
+	}
+	@keyframes c7
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(260px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(260px,320px);
+		}
+	}
+	@keyframes c8
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(330px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(330px,320px);
+		}
+	}
+	@keyframes c9
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(400px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(400px,320px);
+		}
+	}
+	@keyframes c10
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(470px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(470px,320px);
+		}
+	}
+	@keyframes c11
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(540px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(540px,320px);
+		}
+	}
+	@keyframes e1
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-240px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-240px,320px);
+		}
+	}
+	@keyframes e2
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-170px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-170px,320px);
+		}
+	}
+	@keyframes e3
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-100px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-100px,320px);
+		}
+	}
+	@keyframes e4
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-30px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-30px,320px);
+		}
+	}
+	@keyframes e5
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(40px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(40px,320px);
+		}
+	}
+	@keyframes e6
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(110px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(110px,320px);
+		}
+	}
+	@keyframes e7
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(180px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(180px,320px);
+		}
+	}
+	@keyframes e8
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(250px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(250px,320px);
+		}
+	}
+	@keyframes e9
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(320px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(320px,320px);
+		}
+	}
+	@keyframes e10
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(390px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(390px,320px);
+		}
+	}
+	@keyframes e11
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(460px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(460px,320px);
+		}
+	}
+	@keyframes f1
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-320px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-320px,320px);
+		}
+	}	
+	@keyframes f2
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-250px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-250px,320px);
+		}
+	}
+	@keyframes f3
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-180px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-180px,320px);
+		}
+	}
+	@keyframes f4
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-110px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-110px,320px);
+		}
+	}
+	@keyframes f5
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(-40px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(-40px,320px);
+		}
+	}
+	@keyframes f6
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(30px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(30px,320px);
+		}
+	}
+	@keyframes f7
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(100px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(100px,320px);
+		}
+	}
+	@keyframes f8
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(170px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(170px,320px);
+		}
+	}
+	@keyframes f9
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(240px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(240px,320px);
+		}
+	}
+	@keyframes f10
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(310px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(310px,320px);
+		}
+	}
+	@keyframes f11
+	{
+		0%{
+			background-color:red;
+		}
+		10%{
+			background-color:yellow;
+		}
+		30%{
+			background-color:gray;
+			transform:translate(0px,220px);
+		}
+		60%{
+			background-color:#908292;
+			transform:translate(380px,220px);
+		}
+		100%{
+			background-color:#00ffcf;
+			transform:translate(380px,320px);
+		}
+	}
+	div#gant
+	{
+		width: 900px;
+		height: 70px;
+		border-left:4px solid;
+		border-top:2px solid;
+		border-bottom: 2px solid; 
+		margin-top:300px; 
+	}
+	span#hed
+	{
+		font-size: 26px;
+		font-family:Castellar;
+		text-align: center;
+		margin-left: 300px;
+		color: #290384;
+		text-decoration: underline;
+
+	}
+	h3
+	{
+		position: absolute;
+		bottom: 0px;
+		right: 100px;
+		color: #038485;
+		font-size: 25px;
+	}
+	span#als
+	{
+		color: black;
+		font-size: 28px;
+		font-family: Comic Sans MS Black;
+		text-decoration: underline;
+	}
+
+</style>
+
+<script LANGUAGE="JavaScript">
+//document.write("flag1");
+function getParams()
+{
+	var idx = document.URL.indexOf('?');
+	var params = new Array();
+	if (idx != -1) 
+	{
+		var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+		for (var i=0; i<pairs.length; i++)
+		{
+			nameVal = pairs[i].split('=');
+			params[nameVal[0]] = nameVal[1];
+		}
+	}
+	return params;
+}
+params = getParams();
+//document.write("flag1");
+P1bt =parseInt(unescape(params["field1"]));
+P1at = parseInt(unescape(params["field2"]));
+p2bt = parseInt(unescape(params["field3"]));
+p2at = parseInt(unescape(params["field4"]));
+p3bt = parseInt(unescape(params["field5"]));
+p3at = parseInt(unescape(params["field6"]));
+p4bt = parseInt(unescape(params["field7"]));
+p4at = parseInt(unescape(params["field8"]));
+p5bt = parseInt(unescape(params["field9"]));
+p5at = parseInt(unescape(params["field10"]));
+//document.write("flag2");
+alg=unescape(params["field11"]);
+//document.write("flag3");
+
+var at=new Array(P1at,p2at,p3at,p4at,p5at);
+var bt=new Array(P1bt,p2bt,p3bt,p4bt,p5bt);
+var rt=new Array(P1bt,p2bt,p3bt,p4bt,p5bt);
+var ea=new Array("P1","p2","p3","p4","p5");
+//document.write("flag4");
+document.write('<table border=1px; class=sort; cellspacing=0px;cellpadding=5px; id="in";><caption style="font-weight:bold;">Given Input</caption><tr><th width=63px;>PID</th><th width=63px;>BT</th><th width=63px;>AT</th></tr>')
+for(i=0;i<5;i++)
+{
+	document.write("<tr><td align=center;>"+ea[i]+"</td><td>"+bt[i]+"</td><td>"+at[i]+"</td></tr>");
+
+}
+algo=" ";
+if (alg=="fcfs")
+{
+	algo="First Come First Serve";
+}
+else if(alg=="sjf")
+{
+	algo="Shortest Job First";
+}
+else if(alg=="ljf")
+{
+	algo="Longest Job First";
+}
+else if(alg=="hrrn")
+{
+	algo="Highest Response Ratio Next";
+}
+document.write('<h3><span id="als";>Selected Algorithm:</span> '+algo+'</h3>');
+for(i=0;i<5;i++)
+{
+	for(j=i+1;j<5;j++)
+	{
+		if(at[i]>at[j])
+		{
+			temp=at[i];
+			at[i]=at[j];
+			at[j]=temp;
+			temp=bt[i];
+			bt[i]=bt[j];
+			bt[j]=temp;
+			temP1=ea[i];
+			ea[i]=ea[j];
+			ea[j]=temP1;
+			temP1=rt[i];
+			rt[i]=rt[j];
+			rt[j]=temp;
+		}
+	}
+}
+//document.write('<table border=1px; class=sort; cellspacing=0px;cellpadding=5px; id="sorted"; ><caption>After Sorting</caption><tr><th>PID</th><th>BT</th><th>AT</th></tr>')
+//for(i=0;i<5;i++)
+//{
+//	document.write("<tr><td>"+ea[i]+"</td><td>"+bt[i]+"</td><td>"+at[i]+"</td></tr>");
+
+//}
+//document.write("templock");
+var time=0;
+var order=new Array();
+var wt=new Array(5);
+var ft=new Array(5);
+var tt=new Array(5);
+var completed=0;
+if(alg=="fcfs")
+{
+	for(i=0;i<5;i++)	
+	{
+		if(time<at[i])
+		{
+			time=at[i];
+			order.push("gap");
+		}
+		wt[i]=time-at[i];
+		ft[i]=bt[i]+at[i]+wt[i];
+		tt[i]=ft[i]-at[i];
+		time=ft[i];
+		order.push(ea[i]);
+	}
+}
+else if(alg=="sjf")
+{
+	time=0;
+	while(completed<5)
+	{
+		m_rt=10000;
+		m_pid=-1;
+		for(i=0;i<5;i++)
+		{
+			if(rt[i]>0 && at[i]<=time && rt[i]<m_rt)
+			{
+				m_pid=i;
+				m_rt=rt[i];
+			}
+		}
+		if(m_pid==-1)
+		{
+			time++;
+			continue;
+		}
+		i=m_pid;
+		time=time+rt[i];
+		rt[i]=0;
+		ft[i]=time;
+		if(rt[i]==0)
+		{
+			completed++;
+			wt[i]=ft[i]-(at[i]+bt[i]);
+			tt[i]=ft[i]-at[i];
+			order.push(ea[i]);
+			if(ft[i]<at[i+1])
+			{
+				order.push("gap");
+			}
+		}
+	}
+}
+else if(alg=="ljf")
+{
+	time=0;
+	while(completed<5)
+	{
+		m_rt=-100;
+		m_pid=-1;
+		for(i=0;i<5;i++)
+		{
+			if(rt[i]>0 && at[i]<=time && rt[i]>m_rt)
+			{
+				m_pid=i;
+				m_rt=rt[i];
+			}
+		}
+		if(m_pid==-1)
+		{
+			time++;
+			continue;
+		}
+		i=m_pid;
+		time=time+rt[i];
+		rt[i]=0;
+		ft[i]=time;
+		if(rt[i]==0)
+		{
+			completed++;
+			wt[i]=ft[i]-(at[i]+bt[i]);
+			tt[i]=ft[i]-at[i];
+			order.push(ea[i]);
+			if(ft[i]<at[i+1])
+			{
+				order.push("gap");
+			}
+		}
+	}
+}
+var a=new Array(order.length);
+for(i=0;i<order.length;i++)
+{
+	a[i]=order[i];
+	//document.write(a[i]);
+}
+document.write('<table border=1px; cellspacing=0px;cellpadding=5px; id="result";><caption style="font-weight:bold;">Result</caption><tr><th>PID</th><th width=30px;>BT</th><th width=30px;>AT</th><th width=30px;>CT</th><th width=30px;>TAT</th><th width=30px;>WT</th></tr>');
+/*for(i=0;i<5;i++)
+{
+	//if(t1==e[i])
+	//document.write("<tr><td>"+ea[i]+"</td><td>"+bt[i]+"</td><td>"+at[i]+"</td></td><td>"+ft[i]+"</td></td><td>"+tt[i]+"</td></td><td>"+wt[i]+"</td></tr>");	
+
+}*/
+var intp10=0,intp11=0,intp12=0,intp13=0,intp14=0,intp15=0,intp16=0,intp17=0,intp18=0,intp19=0,intp110=0;
+var intp20=0,intp21=0,intp22=0,intp23=0,intp24=0,intp25=0,intp26=0,intp27=0,intp28=0,intp29=0,intp210=0;
+var intp30=0,intp31=0,intp32=0,intp33=0,intp34=0,intp35=0,intp36=0,intp37=0,intp38=0,intp39=0,intp310=0;
+var intp40=0,intp41=0,intp42=0,intp43=0,intp44=0,intp45=0,intp46=0,intp47=0,intp48=0,intp49=0,intp410=0;
+var intp50=0,intp51=0,intp52=0,intp53=0,intp54=0,intp55=0,intp56=0,intp57=0,intp58=0,intp59=0,intp510=0;
+function play(elem,elem1,elem2,elem3,elem4) 
+{
+  elem.style.animationPlayState = "running";
+  elem1.style.animationPlayState = "running";
+  elem2.style.animationPlayState = "running";
+  elem3.style.animationPlayState = "running";
+  elem4.style.animationPlayState = "running";
+  cl=0;ind=0;
+  for(dem=0;dem<order.length;dem++)
+  {
+  	if(cl==rc)
+  	{
+  		ind=dem;
+  		break;
+  	}
+  	if(order[dem]=="P1"||order[dem]=="p2"||order[dem]=="p3"||order[dem]=="p4"||order[dem]=="p5")
+  	{
+  		cl++;
+  	}
+  }
+  cpu=0;
+  for(lmd=0;lmd<ind;lmd++)
+  {
+  	if(order[lmd]=="gap") cpu++;
+  }
+  valg=cpu+(rc-1);
+  for(rt=valg;rt<order.length;rt++)
+  {
+  	if(order[rt]=="P1")
+  	{
+
+  		if(rt==0)
+  		{
+  			intp10=setTimeout(printres,1000,"P1");
+  		}
+  		else if(rt==1)
+  		{
+  			intp11=setTimeout(printres,5000,"P1");
+  		}
+  		else if(rt==2)
+  		{
+  			intp12=setTimeout(printres,10000,"P1");
+  		}
+  		else if(rt==3)
+  		{
+  			intp13=setTimeout(printres,15000,"P1");
+  		}
+  		else if(rt==4)
+  		{
+  			intp14=setTimeout(printres,20000,"P1");
+  		}
+  		else if(rt==5)
+  		{
+  			intp15=setTimeout(printres,25000,"P1");
+  		}
+  		else if(rt==6)
+  		{
+  			intp16=setTimeout(printres,30000,"P1");
+  		}
+  		else if(rt==7)
+  		{
+  			intp17=setTimeout(printres,35000,"P1");
+  		}
+  		else if(rt==8)
+  		{
+  			intp18=setTimeout(printres,40000,"P1");
+  		}
+  		else if(rt==9)
+  		{
+  			intp19=setTimeout(printres,45000,"P1");
+  		}
+  		else if(rt==10)
+  		{
+  			intp110=setTimeout(printres,50000,"P1");
+  		}
+  	}
+  	else if(order[rt]=="p2")
+  	{
+  		if(rt==0)
+  		{
+  			intp20=setTimeout(printres,1000,"p2");
+  		}
+  		else if(rt==1)
+  		{
+  			intp21=setTimeout(printres,5000,"p2");
+  		}
+  		else if(rt==2)
+  		{
+  			intp22=setTimeout(printres,10000,"p2");
+  		}
+  		else if(rt==3)
+  		{
+  			intp23=setTimeout(printres,15000,"p2");
+  		}
+  		else if(rt==4)
+  		{
+  			intp24=setTimeout(printres,20000,"p2");
+  		}
+  		else if(rt==5)
+  		{
+  			intp25=setTimeout(printres,25000,"p2");
+  		}
+  		else if(rt==6)
+  		{
+  			intp26=setTimeout(printres,30000,"p2");
+  		}
+  		else if(rt==7)
+  		{
+  			intp27=setTimeout(printres,35000,"p2");
+  		}
+  		else if(rt==8)
+  		{
+  			intp28=setTimeout(printres,40000,"p2");
+  		}
+  		else if(rt==9)
+  		{
+  			intp29=setTimeout(printres,45000,"p2");
+  		}
+  		else if(rt==10)
+  		{
+  			intp210=setTimeout(printres,50000,"p2");
+  		}
+  	}
+  	else if(order[rt]=="p3")
+  	{
+  		if(rt==0)
+  		{
+  			intp30=setTimeout(printres,1000,"p3");
+  		}
+  		else if(rt==1)
+  		{
+  			intp31=setTimeout(printres,5000,"p3");
+  		}
+  		else if(rt==2)
+  		{
+  			intp32=setTimeout(printres,10000,"p3");
+  		}
+  		else if(rt==3)
+  		{
+  			intp33=setTimeout(printres,15000,"p3");
+  		}
+  		else if(rt==4)
+  		{
+  			intp34=setTimeout(printres,20000,"p3");
+  		}
+  		else if(rt==5)
+  		{
+  			intp35=setTimeout(printres,25000,"p3");
+  		}
+  		else if(rt==6)
+  		{
+  			intp36=setTimeout(printres,30000,"p3");
+  		}
+  		else if(rt==7)
+  		{
+  			intp37=setTimeout(printres,35000,"p3");
+  		}
+  		else if(rt==8)
+  		{
+  			intp38=setTimeout(printres,40000,"p3");
+  		}
+  		else if(rt==9)
+  		{
+  			intp39=setTimeout(printres,45000,"p3");
+  		}
+  		else if(rt==10)
+  		{
+  			intp310=setTimeout(printres,50000,"p3");
+  		}
+  	}
+  	else if(order[rt]=="p4")
+  	{
+  		
+  		if(rt==0)
+  		{
+  			intp40=setTimeout(printres,1000,"p4");
+  		}
+  		else if(rt==1)
+  		{
+  			intp41=setTimeout(printres,5000,"p4");
+  		}
+  		else if(rt==2)
+  		{
+  			intp42=setTimeout(printres,10000,"p4");
+  		}
+  		else if(rt==3)
+  		{
+  			intp43=setTimeout(printres,15000,"p4");
+  		}
+  		else if(rt==4)
+  		{
+  			intp44=setTimeout(printres,20000,"p4");
+  		}
+  		else if(rt==5)
+  		{
+  			intp45=setTimeout(printres,25000,"p4");
+  		}
+  		else if(rt==6)
+  		{
+  			intp46=setTimeout(printres,30000,"p4");
+  		}
+  		else if(rt==7)
+  		{
+  			intp47=setTimeout(printres,35000,"p4");
+  		}
+  		else if(rt==8)
+  		{
+  			intp48=setTimeout(printres,40000,"p4");
+  		}
+  		else if(rt==9)
+  		{
+  			intp49=setTimeout(printres,45000,"p4");
+  		}
+  		else if(rt==10)
+  		{
+  			intp410=setTimeout(printres,50000,"p4");
+  		}
+  	}
+  	else if(order[rt]=="p5")
+  	{
+  		
+  		if(rt==0)
+  		{
+  			intp50=setTimeout(printres,1000,"p5");
+  		}
+  		else if(rt==1)
+  		{
+  			intp51=setTimeout(printres,5000,"p5");
+  		}
+  		else if(rt==2)
+  		{
+  			intp52=setTimeout(printres,10000,"p5");
+  		}
+  		else if(rt==3)
+  		{
+  			intp53=setTimeout(printres,15000,"p5");
+  		}
+  		else if(rt==4)
+  		{
+  			intp54=setTimeout(printres,20000,"p5");
+  		}
+  		else if(rt==5)
+  		{
+  			intp55=setTimeout(printres,25000,"p5");
+  		}
+  		else if(rt==6)
+  		{
+  			intp56=setTimeout(printres,30000,"p5");
+  		}
+  		else if(rt==7)
+  		{
+  			intp57=setTimeout(printres,35000,"p5");
+  		}
+  		else if(rt==8)
+  		{
+  			intp58=setTimeout(printres,40000,"p5");
+  		}
+  		else if(rt==9)
+  		{
+  			intp59=setTimeout(printres,45000,"p5");
+  		}
+  		else if(rt==10)
+  		{
+  			intp510=setTimeout(printres,50000,"p5");
+  		}
+  	}
+  }
+
+}
+function pause(elem,elem1,elem2,elem3,elem4) 
+{
+  elem.style.animationPlayState = "paused";
+  elem1.style.animationPlayState = "paused";
+  elem2.style.animationPlayState = "paused";
+  elem3.style.animationPlayState = "paused";
+  elem4.style.animationPlayState = "paused";
+  clearTimeout(intp10);
+  clearTimeout(intp11);
+  clearTimeout(intp12);
+  clearTimeout(intp13);
+  clearTimeout(intp14);
+  clearTimeout(intp15);
+  clearTimeout(intp16);
+  clearTimeout(intp17);
+  clearTimeout(intp18);
+  clearTimeout(intp19);
+  clearTimeout(intp110);
+  clearTimeout(intp20);
+  clearTimeout(intp21);
+  clearTimeout(intp22);
+  clearTimeout(intp23);
+  clearTimeout(intp24);
+  clearTimeout(intp25);
+  clearTimeout(intp26);
+  clearTimeout(intp27);
+  clearTimeout(intp28);
+  clearTimeout(intp29);
+  clearTimeout(intp210);
+  clearTimeout(intp30);
+  clearTimeout(intp31);
+  clearTimeout(intp32);
+  clearTimeout(intp33);
+  clearTimeout(intp34);
+  clearTimeout(intp35);
+  clearTimeout(intp36);
+  clearTimeout(intp37);
+  clearTimeout(intp38);
+  clearTimeout(intp39);
+  clearTimeout(intp310);
+  clearTimeout(intp40);
+  clearTimeout(intp41);
+  clearTimeout(intp42);
+  clearTimeout(intp43);
+  clearTimeout(intp44);
+  clearTimeout(intp45);
+  clearTimeout(intp46);
+  clearTimeout(intp47);
+  clearTimeout(intp48);
+  clearTimeout(intp49);
+  clearTimeout(intp410);
+  clearTimeout(intp50);
+  clearTimeout(intp51);
+  clearTimeout(intp52);
+  clearTimeout(intp53);
+  clearTimeout(intp54);
+  clearTimeout(intp55);
+  clearTimeout(intp56);
+  clearTimeout(intp57);
+  clearTimeout(intp58);
+  clearTimeout(intp59);
+  clearTimeout(intp510);
+}
+function restart()
+{
+	window.location.reload();
+}
+var rc=1;
+function printres(t1)
+{
+	for(z2=0;z2<5;z2++)
+	{
+		if(t1==ea[z2])
+		{
+			var table=document.getElementById("result");
+			var row=table.insertRow(rc);
+			var cell1=row.insertCell(0);
+			var cell2=row.insertCell(1);
+			var cell3=row.insertCell(2);
+			var cell4=row.insertCell(3);
+			var cell5=row.insertCell(4);
+			var cell6=row.insertCell(5);
+			cell1.innerHTML=ea[z2];
+			cell2.innerHTML=bt[z2];
+			cell3.innerHTML=at[z2];
+			cell4.innerHTML=ft[z2];
+			cell5.innerHTML=tt[z2];
+			cell6.innerHTML=wt[z2];
+			row.className="sed";
+			rc++;
+			break;
+		}
+	}
+}
+function start(elem,elem1,elem2,elem3,elem4,btnplay,btnpause,btnstart,btnrestart)
+{
+	elem.style.animationPlayState = "running";
+  	elem1.style.animationPlayState = "running";
+  	elem2.style.animationPlayState = "running";
+  	elem3.style.animationPlayState = "running";
+  	elem4.style.animationPlayState = "running";
+  	btnplay.disabled=false;
+  	btnpause.disabled=false;
+  	btnstart.disabled=true;
+  	btnrestart.disabled=false;	
+  	var fad=a.length;
+  	//document.write(fad);
+	for(i=0;i<fad;i++)
+	{
+		//document.write(i+"vb "+a[i]);
+		if (a[i]=="gap")
+		{
+			//document.write("gagg");
+		}
+		else if(a[i]=="P1")
+		{
+			//document.write("P1 exe");
+			if(i==0)
+			{
+				//document.write("NP");
+				elem.style.animationName="a1";
+				//document.write("NP");
+				elem.style.animationDelay="1s";
+				intp10=setTimeout(printres,1000,"P1");
+				//document.write("NP");
+			}
+			else if(i==1)
+			{
+				elem.style.animationName="a2";
+				elem.style.animationDelay="5s";
+				//printres("P1");
+				intp11=setTimeout(printres,5000,"P1");
+			}
+			else if(i==2)
+			{
+				elem.style.animationName="a3";
+				elem.style.animationDelay="10s";
+				//printres("P1");
+				intp12=setTimeout(printres,10000,"P1");
+			}
+			else if(i==3)
+			{
+				elem.style.animationName="a4";
+				elem.style.animationDelay="15s";
+				//printres("P1");
+				intp13=setTimeout(printres,15000,"P1");
+			}
+			else if(i==4)
+			{
+				elem.style.animationName="a5";
+				elem.style.animationDelay="20s";
+				//printres("P1");
+				intp14=setTimeout(printres,20000,"P1");
+			}
+			else if(i==5)
+			{
+				elem.style.animationName="a6";
+				elem.style.animationDelay="25s";
+				//printres("P1");
+				intp15=setTimeout(printres,25000,"P1");
+			}
+			else if(i==6)
+			{
+				elem.style.animationName="a7";
+				elem.style.animationDelay="30s";
+				//printres("P1");
+				intp16=setTimeout(printres,30000,"P1");
+			}
+			else if(i==7)
+			{
+				elem.style.animationName="a8";
+				elem.style.animationDelay="35s";
+				//printres("P1");
+				intp17=setTimeout(printres,35000,"P1");
+			}
+			else if(i==8)
+			{
+				elem.style.animationName="a9";
+				elem.style.animationDelay="40s";
+				//printres("P1");
+				intp18=setTimeout(printres,40000,"P1");
+			}
+			else if(i==9)
+			{
+				elem.style.animationName="a10";
+				elem.style.animationDelay="45s";
+				//printres("P1");
+				intp19=setTimeout(printres,45000,"P1");
+			}
+			else if(i==10)
+			{
+				elem.style.animationName="a11";
+				elem.style.animationDelay="50s";
+				//printres("P1");
+				intp110=setTimeout(printres,50000,"P1");
+			}
+		}
+		else if(a[i]=="p2")
+		{
+			//document.write("p2 exe");
+			if(i==0)
+			{
+				elem1.style.animationName="b1";
+				elem1.style.animationDelay="1s";
+				//printres("p2");
+				intp20=setTimeout(printres,1000,"p2");
+			}
+			else if(i==1)
+			{
+				elem1.style.animationName="b2";
+				elem1.style.animationDelay="5s";
+				//printres("p2");
+				intp21=setTimeout(printres,5000,"p2");
+			}
+			else if(i==2)
+			{
+				elem1.style.animationName="b3";
+				elem1.style.animationDelay="10s";
+				//printres("p2");
+				intp22=setTimeout(printres,10000,"p2");
+			}
+			else if(i==3)
+			{
+				elem1.style.animationName="b4";
+				elem1.style.animationDelay="15s";
+				//printres("p2");
+				intp23=setTimeout(printres,15000,"p2");
+			}
+			else if(i==4)
+			{
+				elem1.style.animationName="b5";
+				elem1.style.animationDelay="20s";
+				//printres("p2");
+				intp24=setTimeout(printres,20000,"p2");
+			}
+			else if(i==5)
+			{
+				elem1.style.animationName="b6";
+				elem1.style.animationDelay="25s";
+				//printres("p2");
+				intp25=setTimeout(printres,25000,"p2");
+			}
+			else if(i==6)
+			{
+				elem1.style.animationName="b7";
+				elem1.style.animationDelay="30s";
+				//printres("p2");
+				intp26=setTimeout(printres,30000,"p2");
+			}
+			else if(i==7)
+			{
+				elem1.style.animationName="b8";
+				elem1.style.animationDelay="35s";
+				//printres("p2");
+				intp27=setTimeout(printres,35000,"p2");
+			}
+			else if(i==8)
+			{
+				elem1.style.animationName="b9";
+				elem1.style.animationDelay="40s";
+				//printres("p2");
+				intp28=setTimeout(printres,40000,"p2");
+			}
+			else if(i==9)
+			{
+				elem1.style.animationName="b10";
+				elem1.style.animationDelay="45s";
+				//printres("p2");
+				intp29=setTimeout(printres,45000,"p2");
+			}
+			else if(i==10)
+			{
+				elem1.style.animationName="b11";
+				elem1.style.animationDelay="50s";
+				//printres("p2");
+				intp210=setTimeout(printres,50000,"p2");
+			}
+		}
+		else if(a[i]=="p3")
+		{
+			//document.write("p3 exe");
+			if(i==0)
+			{
+				elem2.style.animationName="c1";
+				elem2.style.animationDelay="1s";
+				//printres("p3");
+				intp30=setTimeout(printres,1000,"p3");
+			}
+			else if(i==1)
+			{
+				elem2.style.animationName="c2";
+				elem2.style.animationDelay="5s";
+				//printres("p3");
+				intp31=setTimeout(printres,5000,"p3");
+			}
+			else if(i==2)
+			{
+				elem2.style.animationName="c3";
+				elem2.style.animationDelay="10s";
+				//printres("p3");
+				intp32=setTimeout(printres,10000,"p3");
+			}
+			else if(i==3)
+			{
+				elem2.style.animationName="c4";
+				elem2.style.animationDelay="15s";
+				//printres("p3");
+				intp33=setTimeout(printres,15000,"p3");
+			}
+			else if(i==4)
+			{
+				elem2.style.animationName="c5";
+				elem2.style.animationDelay="20s";
+				//printres("p3");
+				intp34=setTimeout(printres,20000,"p3");
+			}
+			else if(i==5)
+			{
+				elem2.style.animationName="c6";
+				elem2.style.animationDelay="25s";
+				//printres("p3");
+				intp35=setTimeout(printres,25000,"p3");
+			}
+			else if(i==6)
+			{
+				elem2.style.animationName="c7";
+				elem2.style.animationDelay="30s";
+				//printres("p3");
+				intp36=setTimeout(printres,30000,"p3");
+			}
+			else if(i==7)
+			{
+				elem2.style.animationName="c8";
+				elem2.style.animationDelay="35s";
+				//printres("p3");
+				intp37=setTimeout(printres,35000,"p3");
+			}
+			else if(i==8)
+			{
+				elem2.style.animationName="c9";
+				elem2.style.animationDelay="40s";
+				//printres("p3");
+				intp38=setTimeout(printres,40000,"p3");
+			}
+			else if(i==9)
+			{
+				elem2.style.animationName="c10";
+				elem2.style.animationDelay="45s";
+				//printres("p3");
+				intp39=setTimeout(printres,45000,"p3");
+			}
+			else if(i==10)
+			{
+				elem2.style.animationName="c11";
+				elem2.style.animationDelay="50s";
+				//printres("p3");
+				intp310=setTimeout(printres,50000,"p3");
+			}
+		}
+		else if(a[i]=="p4")
+		{
+			//document.write("p4 exe");
+			if(i==0)
+			{
+				elem3.style.animationName="e1";
+				elem3.style.animationDelay="1s";
+				//printres("p4");
+				intp40=setTimeout(printres,1000,"p4");
+			}
+			else if(i==1)
+			{
+				elem3.style.animationName="e2";
+				elem3.style.animationDelay="5s";
+				//printres("p4");
+				intp41=setTimeout(printres,5000,"p4");
+			}
+			else if(i==2)
+			{
+				elem3.style.animationName="e3";
+				elem3.style.animationDelay="10s";
+				//printres("p4");
+				intp42=setTimeout(printres,10000,"p4");
+			}
+			else if(i==3)
+			{
+				elem3.style.animationName="e4";
+				elem3.style.animationDelay="15s";
+				//printres("p4");
+				intp43=setTimeout(printres,15000,"p4");
+			}
+			else if(i==4)
+			{
+				elem3.style.animationName="e5";
+				elem3.style.animationDelay="20s";
+				//printres("p4");
+				intp44=setTimeout(printres,20000,"p4");
+			}
+			else if(i==5)
+			{
+				elem3.style.animationName="e6";
+				elem3.style.animationDelay="25s";
+				//printres("p4");
+				intp45=setTimeout(printres,25000,"p4");
+			}
+			else if(i==6)
+			{
+				elem3.style.animationName="e7";
+				elem3.style.animationDelay="30s";
+				//printres("p4");
+				intp46=setTimeout(printres,30000,"p4");
+			}
+			else if(i==7)
+			{
+				elem3.style.animationName="e8";
+				elem3.style.animationDelay="35s";
+				//printres("p4");
+				intp47=setTimeout(printres,35000,"p4");
+			}
+			else if(i==8)
+			{
+				elem3.style.animationName="e9";
+				elem3.style.animationDelay="40s";
+				//printres("p4");
+				intp48=setTimeout(printres,40000,"p4");
+			}
+			else if(i==9)
+			{
+				elem3.style.animationName="e10";
+				elem3.style.animationDelay="45s";
+				//printres("p4");
+				intp49=setTimeout(printres,45000,"p4");
+			}
+			else if(i==10)
+			{
+				elem3.style.animationName="e11";
+				elem3.style.animationDelay="50s";
+				//printres("p4");
+				intp410=setTimeout(printres,50000,"p4");
+			}
+		}
+		else if(a[i]=="p5")
+		{
+			//document.write("p5 exe");
+			if(i==0)
+			{
+				elem4.style.animationName="f1";
+				elem4.style.animationDelay="1s";
+				//printres("p5");
+				intp50=setTimeout(printres,1000,"p5");
+			}
+			else if(i==1)
+			{
+				elem4.style.animationName="f2";
+				elem4.style.animationDelay="5s";
+				//printres("p5");
+				intp51=setTimeout(printres,5000,"p5");
+			}
+			else if(i==2)
+			{
+				elem4.style.animationName="f3";
+				elem4.style.animationDelay="10s";
+				//printres("p5");
+				intp52=setTimeout(printres,10000,"p5");
+			}
+			else if(i==3)
+			{
+				elem4.style.animationName="f4";
+				elem4.style.animationDelay="15s";
+				//printres("p5");
+				intp53=setTimeout(printres,15000,"p5");
+			}
+			else if(i==4)
+			{
+				elem4.style.animationName="f5";
+				elem4.style.animationDelay="20s";
+				//printres("p5");
+				intp54=setTimeout(printres,20000,"p5");
+			}
+			else if(i==5)
+			{
+				elem4.style.animationName="f6";
+				elem4.style.animationDelay="25s";
+				//printres("p5");
+				intp55=setTimeout(printres,25000,"p5");
+			}
+			else if(i==6)
+			{
+				elem4.style.animationName="f7";
+				elem4.style.animationDelay="30s";
+				//printres("p5");
+				intp56=setTimeout(printres,30000,"p5");
+			}
+			else if(i==7)
+			{
+				elem4.style.animationName="f8";
+				elem4.style.animationDelay="35s";
+				//printres("p5");
+				intp57=setTimeout(printres,35000,"p5");
+			}
+			else if(i==8)
+			{
+				elem4.style.animationName="f9";
+				elem4.style.animationDelay="40s";
+				//printres("p5");
+				intp58=setTimeout(printres,40000,"p5");
+			}
+			else if(i==9)
+			{
+				elem4.style.animationName="f10";
+				elem4.style.animationDelay="45s";
+				//printres("p5");
+				intp59=setTimeout(printres,45000,"p5");
+			}
+			else if(i==10)
+			{
+				elem4.style.animationName="f11";
+				elem4.style.animationDelay="50s";
+				//printres("p5");
+				intp510=setTimeout(printres,50000,"p5");
+			}
+		}
+		//document.write("all for ");
+	}
+	//document.write("for loop over");
+}
+</script>
+
+</head>
+<body>
+	<span id="hed">Visualization of Scheduling Algorithms</span><br><br>
+	<hr id="hh"><span id="op">Input/Output Area</span>
+	<div id="main">
+		<div id="P1"><h2 style="vertical-align: center;color:white">P1</h2></div>
+		<div id="p2"><h2 style="vertical-align: center;color:white">P2</h2></div>
+		<div id="p3"><h2 style="vertical-align: center;color:white">P3</h2></div>
+		<div id="p4"><h2 style="vertical-align: center;color:white">P4</h2></div>
+		<div id="p5"><h2 style="vertical-align: center;color:white">P5</h2></div>
+	</div><br>
+	<div id="gant"></div><br>
+	<p id="paragraphgant">Gantt Chart</p>
+	<!--	<table border="1">
+		<tr>
+			<th colspan="5">OUTPUT</th>
+		</tr>
+		<tr>
+			<th>PID</th>
+			<th>BT</th>
+			<th>AT</th>
+			<th>CT</th>
+			<th>TAT</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>-->
+	<br><br><br><br>
+	<hr>
+	<span id="cu">Controlling Unit:</span><br>
+	<button id="btnstart"onclick="start(P1,p2,p3,p4,p5,btnplay,btnpause,btnstart,btnrestart);">Start</button>
+	<button id="btnplay" onclick="play(P1,p2,p3,p4,p5);" disabled="disabled">Play</button>
+	<button id="btnpause" onclick="pause(P1,p2,p3,p4,p5);" disabled="disabled">Pause</button>
+	<button id="btnrestart" onclick="restart();" disabled="disabled">Reinstate</button>
+<body>
+</html>
